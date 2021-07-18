@@ -1,5 +1,5 @@
 {
-  "name": "template-store",
+  "name": "template-1",
   "version": "1.0.0",
   "description": "集成了所有的模板，供给给@melody-core/leo脚手架使用。",
   "main": "index.js",
