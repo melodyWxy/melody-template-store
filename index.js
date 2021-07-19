@@ -9,7 +9,7 @@ class Main {
       .version(require("./package.json").version)
       .option("-v, --version", "查看当前版本");
 
-    // 项目初始化命令
+    // 注册命令test1
     program.command("test <arg>")
         .description('测试命令1')
         .action(async (pk)=>{
