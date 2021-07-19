@@ -1,11 +1,25 @@
 {
-  "name": "template-1",
-  "version": "1.0.0",
-  "description": "集成了所有的模板，供给给@melody-core/leo脚手架使用。",
+  "name": "melody-plugin-template",
+  "version": "1.0.7",
+  "description": "用于开发melody-cli命令行套件的模板",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "bin": {
+    "test": "./index.js"
+  },
+  "contributors": [{
+    "name" : "wxydesign",
+    "email" : "18210711176@163.com",
+    "url" : "https://github.com/melodyWxy"
+  }, {
+    "name" : "amjanney",
+    "email" : "1547702880@qq.com",
+    "url" : "https://github.com/amjanney"
+  }],
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.0.0"
+  }
 }
