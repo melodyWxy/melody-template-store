@@ -14,7 +14,7 @@ class Main {
         .description('测试命令1')
         .action(async (pk)=>{
              // todosth
-            console.log('test1:', arg);
+            console.log('test1:', pk);
         })
 
     // 注册命令 test2
