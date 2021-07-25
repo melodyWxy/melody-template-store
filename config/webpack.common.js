@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
-const { generatePublicPath } = require('@tuya-fe/cdn');
 
 const env = process.env.NODE_ENV;
 const isEnvDevelopment = env === 'development';
@@ -21,7 +20,7 @@ const packageJsonName = require('../package.json').name;
 
 const publicPaths = {
 	development: '',
-	production: generatePublicPath(`${packageJsonName}/`),
+	production: '',// publish cdn
 };
 
 const currentEnvPublicPath = publicPaths[env];

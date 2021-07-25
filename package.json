@@ -1,5 +1,5 @@
 {
-  "name": "{{name}}",
+  "name": "react-ts-template",
   "version": "1.0.0",
   "main": "",
   "scripts": {
@@ -39,7 +39,6 @@
   "license": "ISC",
   "description": "{{description}}",
   "dependencies": {
-    "@tuya-fe/cdn": "^0.0.4",
     "antd": "^4.0.2",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
