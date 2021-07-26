@@ -5,13 +5,24 @@
 集成了所有的模板，供给给@melody-core/leo脚手架使用。
 
 
-## 重要-模板开发须知
+## 重要-模板开发与维护须知
 
-### 分支命名规范
-+ template/xxx 这样命名的分支都会被 leo(狮子座脚手架) 记录在可选列表，所以如果你想发布你的模板，请一定遵遁这样的命名。
-+ package.json 中 name 和 description一定要填好。
-### 开发规范
+### publish命令即可
 
-1. 先从master拆出新的分支，建议命名为 dev/xxxx
-2. 开发并自测完毕后，再提交为 template/xxxx分支
-3. 一定要给自己的模板写好自己的README.md !!!
++ 如果你想发布一个模板？
+```shell
+    # 在你的模板项目根目录下，运行此命令即可。
+    # 注意运行此命令需要@六弦提供给你权限。
+    leo publish <template-name>
+```
++ 迭代一个模板？
+同样的命令！
+```shell
+    # 在你的模板项目根目录下，运行此命令即可。
+    leo publish <template-name>
+    # template-name仍然是你之前填的name
+    # 这时候leo会提示你 远端存在同名模板，是否覆盖
+    # 覆盖即更新！
+    # 当然，你也可以在template-name后面添加版本数字，以保留之前的远端模板。
+    # 例如：  leo publish react-spa-template@1.0.2
+```
